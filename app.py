@@ -29,6 +29,11 @@ def terms():
     return render_template("terms.html", updated=date.today().strftime("%B %-d, %Y"))
 
 
+@app.route("/privacy")
+def privacy():
+    return render_template("privacy.html", updated=date.today().strftime("%B %-d, %Y"))
+
+
 # ------------------------------------------------------------------ #
 # Placeholder routes — students will implement these                  #
 # ------------------------------------------------------------------ #
